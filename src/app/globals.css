@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-blue-2000: #2A27DA;
+  --color-light-100:#E6EBF1;
+  --shadow-cs-xl:0px 4px 20px 0px #00000014;
+  --drop-shadow-cs-xl:0px 4px 20px 0px #00000014;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+    --breakpoint-max-mb:600px;
+}
+
+button{
+  @apply cursor-pointer;
+}
+body {
+  font-family: "Inter","Inter Fallback";
+}
+
+.rte * + p {
+  margin: 8px 0;
+}
+.rte h2 {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+.rte h3 {
+    font-size: 18px;
+    margin: 14px 0 2px;
+    font-weight: 700;
+}
+
+.rte ul {
+    list-style: disc;
+     margin: 8px 0;
+    padding-left: 16px;
+}
+.rte ul li{
+     margin: 6px 0;
+}
+.rte ol {
+    list-style: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 20px 10px 30px;
+    color: #000;
+    margin: 4px 0;
+}
+
+.rte ol li +li {
+    margin-top: 4px;
+}
+.custom-gradient{
+  @apply from-[3.1%] to-[91.09%] bg-gradient-to-bl from-[#155DFC] to-[#2A27DA];
+}
+.custom-gradient-hover:hover{
+ @apply from-[3.1%] to-[91.09%] bg-gradient-to-r from-[#155DFC] to-[#2A27DA];
+}
+.main-wrapper {
+      clip-path: inset(0);
+}
+.rte h3:first-child {
+    margin-top: 0;
+}
+.ps-wrapper
+.slick-dots {
+    bottom: -17px;
+}
+html
+.slick-dots li {
+    margin: 0 2px;
+    width: auto;
+    height: auto;
+}
+html
+.slick-dots li button:before {
+    display: none;
+}
+html
+.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+    border: 1px solid #1a57f8;
+}
+html
+.slick-dots li.slick-active button {
+    background:  #1a57f8;
+}
+.pp-details-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.calendly-wrapper iframe {
+    height: 100dvh;
+}
